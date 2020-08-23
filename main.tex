@@ -99,17 +99,17 @@
  \frametitle{RDF definition}
  	RDF data graph and RDF schema graph:
  	\begin{figure}[h]
-        \begin{subfigure}[h]{0.45\linewidth} 
-            \includegraphics[width=\textwidth]{pictures/rdf_graph}
-            \caption{\scriptsize RDF graph}
+        \begin{subfigure}[h]{0.4\linewidth} 
+            \includegraphics[width=\textwidth]{pictures/megsen}
+            %\caption{\scriptsize RDF graph}
             \label{fig:rdf_graph}
         \end{subfigure}       
-        \begin{subfigure}[h]{0.45\linewidth} 
-            \includegraphics[width=\linewidth]{pictures/rdfs_graph}
-            \caption{\scriptsize RDF Shema (RDFS) graph}
+        \begin{subfigure}[h]{0.33\linewidth} 
+            \includegraphics[width=\linewidth]{pictures/opmsen}
+            %\caption{\scriptsize RDF Shema (RDFS) graph}
             \label{fig:rdfs_graph}
         \end{subfigure}
-        \caption{\scriptsize Example of RDF graph and RDFS graph}
+       % \caption{\scriptsize Example of RDF graph and RDFS graph}
     \end{figure}
     
 \end{frame}
@@ -118,44 +118,12 @@
 \section{}
 \begin{frame}
  \frametitle{RDF definition}
-  \begin{table}[htbp]
-		\centering
-        \resizebox{10 cm}{!} {
-			\begin{tabular}{|c|c|c|}
-			\hline
-			 RDF Statement & Triple & Shorthand \\
-			\hline \hline 
-			Class Assertion & (s,rdf:type,o)&(s,$t$,o) \\ 
-            Property assertion & (s,p,o) with p $\not=$ rdf:type & (s,p,o) \\ \hline
-			\end{tabular}
-
-			\begin{tabular}{|l|l|l|}
-			\hline
-			 RDFS Statement & Triple & Shorthand \\
-			\hline \hline 
-			SubClass & (s,rdf:subClassOf,o)&(s,$\prec_{sc}$,o) \\ 
-            Property assertion & (s,rdf:subPropertyOf,o) & (s,$\prec_{sp}$,o) \\ 
-            Domain typing & (s,rdf:domain,o) & (s,$\hookleftarrow_{d}$,o) \\ 
-            Range typing & (s,rdf:range,o) & (s,$\hookleftarrow_{d}$,o) \\ \hline
-			\end{tabular}
-            }
-        \caption{\scriptsize RDF \& RDFS statements}
-		\label{RDFstatements}
-	\end{table}
-
- 	\begin{figure}[h]
-        \begin{subfigure}[h]{0.45\linewidth} 
-            \includegraphics[width=\linewidth]{pictures/rdf_graph}
-            \caption{\tiny RDF graph}
-            \label{fig:rdf_graph}
-        \end{subfigure}       
-        \begin{subfigure}[h]{0.45\linewidth} 
-            \includegraphics[width=\linewidth]{pictures/rdfs_graph}
-            \caption{\tiny RDF Shema (RDFS) graph}
-            \label{fig:rdfs_graph}
-        \end{subfigure}
-        \caption{\scriptsize Example of RDF graph and RDFS graph}
-    \end{figure}
+	\begin{figure}[p]
+  		\centering
+  		\includegraphics[width=0.6\linewidth]{pictures/opmvect}
+  		%\caption{\scriptsize Main Approaches for RDF Summarization\cite{Zneika2018}}
+  		\label{fig:approaches_RDF}
+ 	\end{figure}
 
   
 \end{frame}
